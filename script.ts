@@ -9,12 +9,20 @@ const add = (n1: number, n2: number): number => {
 
 button.addEventListener("click", () => {
     resultArea.innerText = "| Result: ";
-    resultArea.innerText += add(input1.value, input2.value);
+    resultArea.innerText += add(+input1.value, +input2.value);
 });
 
-class Person {
-    name;
-    constructor(name) {
-        this.name = name;
-    }
-}
+// class Person(name0: string) {
+//     this.name0;
+//     constructor(name0) {
+//         this.name0 = name0;
+//     }
+// }
+
+let someVariable: boolean | number;
+someVariable = 13;
+console.log(someVariable.toString())
+
+let anyType: any;
+anyType = false;
+console.log(anyType.valueOf())
