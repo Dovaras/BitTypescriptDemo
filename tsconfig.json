@@ -1,7 +1,9 @@
 {
-"compilerOptions": {
+  "compilerOptions": {
     "target": "es6",
     "rootDir": ".\\",
-    "outDir": ".\\js"
-    }
+    "outDir": ".\\js",
+    "noImplicitAny": true,
+    "noEmitOnError": true
+  }
 }

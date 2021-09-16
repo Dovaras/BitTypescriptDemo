@@ -3,7 +3,7 @@ const input1 = document.getElementById("n1") as HTMLInputElement;
 const input2 = document.getElementById("n2") as HTMLInputElement;
 const resultArea = document.getElementById("result_area");
 
-const add = (n1, n2) => {
+const add = (n1: number, n2: number): number => {
     return typeof n1 === 'number' && typeof n2 === 'number' ? n1 + n2 : +n1 + +n2;
 }
 
